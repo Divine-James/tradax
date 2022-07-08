@@ -41,17 +41,48 @@
 .info{
     display: flex;
     justify-content: space-between;
+    &__box{
+        width: 50rem;
+    }
     &__message{
-        padding: 5rem;
-        margin-left: 3rem;
+        padding: 3rem;
+        
         &-header{
             font-size: 5.2rem;
             font-weight: bold;
            
         }
+        &-paragraph{
+            font-size: 1.8rem;
+            margin-top: 1rem;
+        }
+    }
+    &__button{
+        margin-top: 3.5rem;
+        
+       &-1{
+           padding: 1.5rem 4rem;
+           border: none;
+           background-color: var( --Grey-light-4);
+           border-radius: 4px;
+       }
+       &-2{
+           padding: 1.5rem 4.5rem;
+           border: none;
+           background-color: var(--color-primary);
+           border-radius: 4px;
+           margin-left: -5px;
+           color: var(--color-white);
+       }
     }
     &__image{
-       margin-top: 5rem;
+       margin-top: 2rem;
        margin-right: 7rem;
     }
+}
+.logo{
+    margin: 3rem;
+    margin-left: -5rem;
+    display: flex;
+    justify-content: space-evenly;
 }
