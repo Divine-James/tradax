@@ -6,3 +6,20 @@ main{
     background-color: var(--color-Grey-light-1);
     padding: 3rem;
 }
+.testimonial{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+    align-items: center;
+    margin-top: 4rem;
+}
+footer{
+    background-color: var(--color-primary);
+    color: var(--color-white);
+    padding: 5rem;
+}
+.footer-content{
+    display: flex;
+    justify-content: space-between;
+}
