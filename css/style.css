@@ -62,12 +62,15 @@ footer {
   @media only screen and (max-width: 37.5em) {
     footer {
       padding: 3rem; } }
+  @media only screen and (max-width: 24.5em) {
+    footer {
+      padding: 2rem; } }
 
 .footer {
   display: flex;
   justify-content: space-between;
   font-size: 1.6rem; }
-  @media only screen and (max-width: 18.75em) {
+  @media only screen and (max-width: 24.5em) {
     .footer {
       font-size: 1.2rem; } }
 
@@ -134,7 +137,7 @@ footer {
     @media only screen and (max-width: 25em) {
       .info__button {
         margin-top: 3rem; } }
-    @media only screen and (max-width: 18.75em) {
+    @media only screen and (max-width: 24.5em) {
       .info__button {
         display: flex; } }
     .info__button-1 {
@@ -147,7 +150,7 @@ footer {
       @media only screen and (max-width: 25em) {
         .info__button-1 {
           padding: 1rem 3rem; } }
-      @media only screen and (max-width: 18.75em) {
+      @media only screen and (max-width: 24.5em) {
         .info__button-1 {
           padding: 1rem 2rem;
           font-size: 1.2rem; } }
@@ -163,7 +166,7 @@ footer {
       @media only screen and (max-width: 25em) {
         .info__button-2 {
           padding: 1rem 3rem; } }
-      @media only screen and (max-width: 18.75em) {
+      @media only screen and (max-width: 24.5em) {
         .info__button-2 {
           padding: 1rem 2rem;
           font-size: 1.2rem; } }
@@ -193,7 +196,7 @@ footer {
   @media only screen and (max-width: 25em) {
     .logo-img:not(:last-child) {
       margin-right: 4rem; } }
-  @media only screen and (max-width: 18.75em) {
+  @media only screen and (max-width: 24.5em) {
     .logo-img:not(:last-child) {
       margin-right: 1.5rem; } }
 
@@ -208,7 +211,7 @@ footer {
   @media only screen and (max-width: 31.25em) {
     .trading-section__content {
       margin-left: 1rem; } }
-  @media only screen and (max-width: 18.75em) {
+  @media only screen and (max-width: 24.5em) {
     .trading-section__content {
       margin-left: -3rem; } }
 
@@ -230,7 +233,7 @@ footer {
     .trading-section__box {
       width: 15rem;
       padding: .5rem; } }
-  @media only screen and (max-width: 18.75em) {
+  @media only screen and (max-width: 24.5em) {
     .trading-section__box {
       width: 13rem;
       font-size: 1.2rem;
@@ -268,7 +271,7 @@ footer {
     @media only screen and (max-width: 25em) {
       .start-trading__box {
         width: 40rem; } }
-    @media only screen and (max-width: 18.75em) {
+    @media only screen and (max-width: 24.5em) {
       .start-trading__box {
         width: 30rem; } }
 
@@ -300,7 +303,7 @@ footer {
       width: 15rem;
       margin: 2rem 3rem;
       padding: 1rem; } }
-  @media only screen and (max-width: 18.75em) {
+  @media only screen and (max-width: 24.5em) {
     .testimonails {
       width: 12rem;
       margin: 2rem 1rem;
@@ -326,6 +329,9 @@ footer {
   justify-content: space-between;
   font-size: 1.6rem;
   margin-top: 3rem; }
+  @media only screen and (max-width: 24.5em) {
+    .f-socials {
+      font-size: 1.2rem; } }
   .f-socials__icons {
     display: flex;
     justify-content: space-between; }
