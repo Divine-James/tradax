@@ -45,3 +45,18 @@
         width: 20%;
     }
 }
+.f-head{
+    font-size: 1.8rem;
+    font-weight: 400;
+}
+.footer-head{
+    font-size: 2rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+.page-heading{
+    color: var(--color-primary);
+    display: flex;
+    justify-content: center;
+    font-size: 4rem;
+}

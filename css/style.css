@@ -30,8 +30,10 @@ body {
   font-weight: 400;
   line-height: 1.6; }
 
-li {
-  list-style: none; }
+li, a {
+  list-style: none;
+  text-decoration: none;
+  color: var(--color-white); }
 
 .header {
   min-height: 4rem; }
@@ -51,11 +53,12 @@ main {
 footer {
   background-color: var(--color-primary);
   color: var(--color-white);
-  padding: 5rem; }
+  padding: 5rem 10rem; }
 
-.footer-content {
+.footer {
   display: flex;
-  justify-content: space-between; }
+  justify-content: space-between;
+  font-size: 1.6rem; }
 
 .navigation {
   display: flex;
@@ -63,9 +66,6 @@ footer {
   align-items: center;
   background-color: var(--color-primary);
   font-size: 1.4rem; }
-  .navigation__icon {
-    color: var(--color-white);
-    background-color: var(--color-white); }
   .navigation__item {
     list-style: none;
     display: inline-block;
@@ -83,7 +83,8 @@ footer {
     margin-right: 4rem;
     margin-top: .7rem;
     margin-bottom: .7rem;
-    border-radius: 2px; }
+    border-radius: 2px;
+    cursor: pointer; }
 
 .info {
   display: flex;
@@ -105,7 +106,8 @@ footer {
       border: none;
       background-color: var(--Grey-light-4);
       border-radius: 4px;
-      text-transform: capitalize; }
+      text-transform: capitalize;
+      cursor: pointer; }
     .info__button-2 {
       padding: 1.5rem 4.5rem;
       border: none;
@@ -113,7 +115,8 @@ footer {
       border-radius: 4px;
       margin-left: -5px;
       color: var(--color-white);
-      text-transform: capitalize; }
+      text-transform: capitalize;
+      cursor: pointer; }
   .info__image {
     margin-top: 2rem;
     margin-right: 7rem; }
@@ -122,19 +125,17 @@ footer {
   margin: 3rem;
   margin-left: -5rem;
   display: flex;
-  justify-content: space-evenly; }
-
-.trading-section__heading {
-  color: var(--color-primary);
-  display: flex;
-  justify-content: center;
-  font-size: 4rem;
-  margin-top: 5rem; }
+  justify-content: space-evenly;
+  margin-top: 5rem;
+  margin-bottom: 7rem; }
+  .logo-img {
+    width: 15rem; }
 
 .trading-section__content {
   display: flex;
   flex-wrap: wrap;
-  margin: 4rem; }
+  margin: 4rem;
+  margin-left: 10rem; }
 
 .trading-section__box {
   border: 1px solid var(--Grey-light-4);
@@ -153,16 +154,14 @@ footer {
   justify-content: center;
   flex-direction: column;
   align-items: center; }
-  .start-trading__heading {
-    color: var(--color-primary);
-    margin-bottom: 4rem;
-    font-size: 4rem; }
   .start-trading__box {
     border: 1px solid var(--Grey-light-4);
     width: 80rem;
     border-radius: 5px;
     box-shadow: var(--shadow-dark);
-    padding: 3rem 2rem; }
+    padding: 3rem 2rem;
+    margin-top: 5rem;
+    margin-bottom: 5rem; }
 
 .testimonails {
   border: 1px solid var(--Grey-light-4);
@@ -181,6 +180,24 @@ footer {
 .testimonails:last-child {
   border: none !important;
   padding: 0; }
+
+.footer__list {
+  margin-top: 2rem; }
+
+.footer__list-item:first-child {
+  margin-bottom: 1.5rem; }
+
+.f-socials {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.6rem;
+  margin-top: 3rem; }
+  .f-socials__icons {
+    display: flex;
+    justify-content: space-between; }
+  .f-socials__icon:not(:first-child) {
+    margin-left: 2.3rem;
+    width: 2rem; }
 
 .create {
   display: flex;
@@ -223,3 +240,18 @@ footer {
 
 .coin-logo {
   width: 20%; }
+
+.f-head {
+  font-size: 1.8rem;
+  font-weight: 400; }
+
+.footer-head {
+  font-size: 2rem;
+  text-transform: uppercase;
+  letter-spacing: 2px; }
+
+.page-heading {
+  color: var(--color-primary);
+  display: flex;
+  justify-content: center;
+  font-size: 4rem; }
