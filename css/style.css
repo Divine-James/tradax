@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=poppins:wght@200&display=swap");
 :root {
   --color-primary: #183593;
+  --color-primary-trans: rgba(44, 70, 155, 0.9);
   --color-Grey-light-1: #faf9f9;
   --color-Grey-light-2: #f7f3f3;
   --Grey-light-4: #ccc;
@@ -69,10 +70,11 @@ footer {
 
 .navigation {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   background-color: var(--color-primary);
-  font-size: 1.4rem; }
+  font-size: 1.4rem;
+  padding: 0 3rem; }
   .navigation__item {
     list-style: none;
     display: inline-block;
@@ -92,6 +94,9 @@ footer {
     margin-bottom: .7rem;
     border-radius: 2px;
     cursor: pointer; }
+
+#nav-link {
+  color: black; }
 
 .info {
   display: flex;
@@ -173,7 +178,7 @@ footer {
   margin: 2rem;
   border-radius: 5px;
   box-shadow: var(--shadow-dark); }
-  @media only screen and (max-width: 37.5em) {
+  @media only screen and (max-width: 56.25em) {
     .trading-section__box {
       width: 25rem; } }
   @media only screen and (max-width: 31.25em) {
@@ -219,6 +224,11 @@ footer {
   padding: 3rem;
   padding-right: 5rem;
   position: relative; }
+  @media only screen and (max-width: 56.25em) {
+    .testimonails {
+      width: 30rem;
+      margin: 2rem 4rem;
+      padding: 2rem; } }
   @media only screen and (max-width: 37.5em) {
     .testimonails {
       width: 25rem;
@@ -260,6 +270,61 @@ footer {
         width: 1.5rem; } }
   .f-socials__icon:not(:first-child) {
     margin-left: 2.3rem; }
+
+.hamburger {
+  display: none;
+  cursor: pointer; }
+
+@media only screen and (max-width: 56.25em) {
+  .hamburger {
+    display: block; }
+  .hamburger.active .bar:nth-child(2) {
+    opacity: 0; }
+  .hamburger.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg); }
+  .hamburger.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg); }
+  .nav-menu {
+    position: fixed;
+    right: -100%;
+    top: 20px;
+    gap: 0;
+    flex-direction: column;
+    background-color: var(--color-primary-trans);
+    width: 60%;
+    text-align: center;
+    transition: 0.3s;
+    display: block; }
+  .navigation__item {
+    margin: 16px 0;
+    display: block; }
+  .nav-menu.active {
+    right: 0; }
+  .navigation__button {
+    display: block;
+    margin-top: -7.5rem;
+    text-align: center;
+    margin-left: 5rem; }
+  .navigation__button-item {
+    padding: 0;
+    background-color: transparent;
+    display: block;
+    color: var(--color-white); } }
+
+.nav-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 60px; }
+
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: #eee; }
 
 .create {
   display: flex;
