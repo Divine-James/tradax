@@ -2,9 +2,18 @@
     display: none;
     cursor: pointer;
 }
+.mobile{
+    display: none;
+}
 @media only screen and (max-width: $bp-medium){
     .hamburger{
         display: block;
+    }
+    .mobile{
+        display: block;
+        text-align: center;
+        margin-top: 2rem;
+        margin-left: -3rem;
     }
     .hamburger.active .bar:nth-child(2){
         opacity: 0;
@@ -18,7 +27,7 @@
     .nav-menu{
         position: fixed;
         right: -100%;
-        top: 20px;
+        top: 28px;
         gap: 0;
         flex-direction: column;
         background-color: var(--color-primary-trans);
@@ -136,4 +145,7 @@
     @media only screen and (max-width: $bp-small){
         font-size: 3rem;
        }
+       @media only screen and (max-width: $bp-smallest){
+        font-size: 1.5rem;
+    }
 }
