@@ -118,17 +118,24 @@
         @media only screen and (max-width: $bp-small){
             margin-left: 3rem;
            }
+           @media only screen and (max-width: $bp-smaller){
+            margin-left: 1rem;
+        }
     }
     &__box{
         border: 1px solid var(--Grey-light-4);
         padding: 2rem;
-        width: 30rem;
+        width: 35rem;
         margin: 2rem;
         border-radius: 5px;
         box-shadow: var(--shadow-dark);
         @media only screen and (max-width: $bp-small){    
             width: 25rem;
            }
+           @media only screen and (max-width: $bp-smaller){
+            width: 20rem;
+            padding: 1rem;
+        }
         &-heading{
             font-size: 1.6rem;
             font-weight: 600;
@@ -158,6 +165,9 @@
             @media only screen and (max-width: $bp-small){
                 width: 60rem;
                }
+               @media only screen and (max-width: $bp-smaller){
+                width: 50rem;
+            }
         
     }
 }
@@ -172,7 +182,13 @@
     @media only screen and (max-width: $bp-small){    
         width: 25rem;
         margin: 2rem 4rem;
+        padding: 2rem;
        }
+       @media only screen and (max-width: $bp-smaller){
+        width: 20rem;
+        margin: 2rem 3rem;
+        padding: 1.2rem;
+    }
 
     &__img{
         width: 5rem;

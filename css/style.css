@@ -162,17 +162,24 @@ footer {
   @media only screen and (max-width: 37.5em) {
     .trading-section__content {
       margin-left: 3rem; } }
+  @media only screen and (max-width: 31.25em) {
+    .trading-section__content {
+      margin-left: 1rem; } }
 
 .trading-section__box {
   border: 1px solid var(--Grey-light-4);
   padding: 2rem;
-  width: 30rem;
+  width: 35rem;
   margin: 2rem;
   border-radius: 5px;
   box-shadow: var(--shadow-dark); }
   @media only screen and (max-width: 37.5em) {
     .trading-section__box {
       width: 25rem; } }
+  @media only screen and (max-width: 31.25em) {
+    .trading-section__box {
+      width: 20rem;
+      padding: 1rem; } }
   .trading-section__box-heading {
     font-size: 1.6rem;
     font-weight: 600;
@@ -200,6 +207,9 @@ footer {
     @media only screen and (max-width: 37.5em) {
       .start-trading__box {
         width: 60rem; } }
+    @media only screen and (max-width: 31.25em) {
+      .start-trading__box {
+        width: 50rem; } }
 
 .testimonails {
   border: 1px solid var(--Grey-light-4);
@@ -212,7 +222,13 @@ footer {
   @media only screen and (max-width: 37.5em) {
     .testimonails {
       width: 25rem;
-      margin: 2rem 4rem; } }
+      margin: 2rem 4rem;
+      padding: 2rem; } }
+  @media only screen and (max-width: 31.25em) {
+    .testimonails {
+      width: 20rem;
+      margin: 2rem 3rem;
+      padding: 1.2rem; } }
   .testimonails__img {
     width: 5rem;
     position: absolute;
