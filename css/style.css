@@ -20,15 +20,16 @@
 
 html {
   box-sizing: border-box;
-  font-size: 62.5%;
-  /*  @media only screen and (max-width: $bp-large){
-        font-size: 50%;
-    }*/ }
+  font-size: 62.5%; }
+  @media only screen and (max-width: 68.75em) {
+    html {
+      font-size: 50%; } }
 
 body {
   font-family: 'poppins', sans-serif;
   font-weight: 400;
-  line-height: 1.6; }
+  line-height: 1.6;
+  width: 100vw; }
 
 li, a {
   list-style: none;
@@ -49,11 +50,17 @@ main {
   justify-content: center;
   align-items: center;
   margin-top: 4rem; }
+  @media only screen and (max-width: 37.5em) {
+    .testimonial {
+      justify-content: flex-start; } }
 
 footer {
   background-color: var(--color-primary);
   color: var(--color-white);
   padding: 5rem 10rem; }
+  @media only screen and (max-width: 37.5em) {
+    footer {
+      padding: 3rem; } }
 
 .footer {
   display: flex;
@@ -89,8 +96,14 @@ footer {
 .info {
   display: flex;
   justify-content: space-between; }
+  @media only screen and (max-width: 37.5em) {
+    .info {
+      display: block; } }
   .info__box {
     width: 50rem; }
+    @media only screen and (max-width: 37.5em) {
+      .info__box {
+        width: 100%; } }
   .info__message {
     padding: 3rem; }
     .info__message-header {
@@ -119,35 +132,57 @@ footer {
       cursor: pointer; }
   .info__image {
     margin-top: 2rem;
-    margin-right: 7rem; }
+    margin-right: 7rem;
+    width: 100%; }
+    @media only screen and (max-width: 37.5em) {
+      .info__image {
+        width: 80%;
+        margin-right: 2rem; } }
 
 .logo {
   margin: 3rem;
-  margin-left: -5rem;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: flex-start;
   margin-top: 5rem;
   margin-bottom: 7rem; }
   .logo-img {
-    width: 15rem; }
+    width: 16%; }
+
+.logo-img:not(:last-child) {
+  margin-right: 10rem; }
+  @media only screen and (max-width: 37.5em) {
+    .logo-img:not(:last-child) {
+      margin-right: 7rem; } }
 
 .trading-section__content {
   display: flex;
   flex-wrap: wrap;
   margin: 4rem;
   margin-left: 10rem; }
+  @media only screen and (max-width: 37.5em) {
+    .trading-section__content {
+      margin-left: 3rem; } }
 
 .trading-section__box {
   border: 1px solid var(--Grey-light-4);
-  padding: 1rem;
+  padding: 2rem;
   width: 35rem;
   margin: 2rem;
   border-radius: 5px;
   box-shadow: var(--shadow-dark); }
+  @media only screen and (max-width: 37.5em) {
+    .trading-section__box {
+      width: 25rem; } }
   .trading-section__box-heading {
     font-size: 1.6rem;
     font-weight: 600;
     margin-top: 1rem; }
+
+.trading-section__img-logo {
+  width: 5rem; }
+  @media only screen and (max-width: 37.5em) {
+    .trading-section__img-logo {
+      width: 3rem; } }
 
 .start-trading {
   display: flex;
@@ -162,6 +197,9 @@ footer {
     padding: 3rem 2rem;
     margin-top: 5rem;
     margin-bottom: 5rem; }
+    @media only screen and (max-width: 37.5em) {
+      .start-trading__box {
+        width: 60rem; } }
 
 .testimonails {
   border: 1px solid var(--Grey-light-4);
@@ -171,6 +209,10 @@ footer {
   padding: 3rem;
   padding-right: 5rem;
   position: relative; }
+  @media only screen and (max-width: 37.5em) {
+    .testimonails {
+      width: 25rem;
+      margin: 2rem 4rem; } }
   .testimonails__img {
     width: 5rem;
     position: absolute;
@@ -195,9 +237,13 @@ footer {
   .f-socials__icons {
     display: flex;
     justify-content: space-between; }
-  .f-socials__icon:not(:first-child) {
-    margin-left: 2.3rem;
+  .f-socials__icon {
     width: 2rem; }
+    @media only screen and (max-width: 37.5em) {
+      .f-socials__icon {
+        width: 1.5rem; } }
+  .f-socials__icon:not(:first-child) {
+    margin-left: 2.3rem; }
 
 .create {
   display: flex;
@@ -255,3 +301,6 @@ footer {
   display: flex;
   justify-content: center;
   font-size: 4rem; }
+  @media only screen and (max-width: 37.5em) {
+    .page-heading {
+      font-size: 3rem; } }
