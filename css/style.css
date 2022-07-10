@@ -166,7 +166,7 @@ footer {
 .trading-section__box {
   border: 1px solid var(--Grey-light-4);
   padding: 2rem;
-  width: 35rem;
+  width: 30rem;
   margin: 2rem;
   border-radius: 5px;
   box-shadow: var(--shadow-dark); }
