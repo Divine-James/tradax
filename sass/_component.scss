@@ -66,6 +66,7 @@
             @media only screen and (max-width: $bp-smallest){
                font-size: 3rem;
             }
+
            
         }
         &-paragraph{
@@ -78,6 +79,9 @@
         @media only screen and (max-width: $bp-smallest){
             margin-top: 3rem;
          }
+         @media only screen and (max-width: $bp-smallphone){
+            display: flex;
+         }
         
        &-1{
            padding: 1.5rem 4rem;
@@ -88,9 +92,11 @@
            cursor: pointer;
            @media only screen and (max-width: $bp-smallest){
             padding:1rem 3rem;
+            
          }
            @media only screen and (max-width: $bp-smallphone){
-            padding: 1rem 2.5rem;
+            padding: 1rem 2rem;
+            font-size: 1.2rem;
          }
        }
        &-2{
@@ -106,7 +112,8 @@
             padding: 1rem 3rem;
          }
            @media only screen and (max-width: $bp-smallphone){
-            padding:1rem 2.5rem;
+            padding:1rem 2rem;
+            font-size: 1.2rem;
          }
        }
     }
@@ -156,6 +163,10 @@
            @media only screen and (max-width: $bp-smaller){
             margin-left: 1rem;
         }
+        @media only screen and (max-width: $bp-smallphone){
+            margin-left: -3rem;
+            
+        }
 
     }
     &__box{
@@ -176,6 +187,12 @@
         @media only screen and (max-width: $bp-smallest){
             width: 15rem;
             padding: .5rem;
+        }
+        @media only screen and (max-width: $bp-smallphone){
+            width: 13rem;
+            font-size: 1.2rem;  
+            margin: 1rem;
+            
         }
 
         &-heading{
@@ -213,6 +230,10 @@
             @media only screen and (max-width: $bp-smallest){
                 width: 40rem;
             }
+            @media only screen and (max-width: $bp-smallphone){
+                width: 30rem;  
+                
+            }
         
     }
 }
@@ -244,6 +265,11 @@
         margin: 2rem 3rem;
         padding: 1rem;
     }
+    @media only screen and (max-width: $bp-smallphone){
+        width: 12rem;
+        margin: 2rem 1rem;
+        padding: 1rem;
+    }
 
     &__img{
         width: 5rem;
@@ -273,6 +299,10 @@
     justify-content: space-between;
     font-size: 1.6rem;
     margin-top: 3rem;
+    @media only screen and (max-width: $bp-smallphone){
+        font-size: 1.2rem; 
+        
+    }
     &__icons{
         display: flex;
         justify-content: space-between;

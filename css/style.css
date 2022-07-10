@@ -67,6 +67,9 @@ footer {
   display: flex;
   justify-content: space-between;
   font-size: 1.6rem; }
+  @media only screen and (max-width: 18.75em) {
+    .footer {
+      font-size: 1.2rem; } }
 
 .navigation {
   display: flex;
@@ -131,6 +134,9 @@ footer {
     @media only screen and (max-width: 25em) {
       .info__button {
         margin-top: 3rem; } }
+    @media only screen and (max-width: 18.75em) {
+      .info__button {
+        display: flex; } }
     .info__button-1 {
       padding: 1.5rem 4rem;
       border: none;
@@ -141,9 +147,10 @@ footer {
       @media only screen and (max-width: 25em) {
         .info__button-1 {
           padding: 1rem 3rem; } }
-      @media only screen and (max-width: 18.75) {
+      @media only screen and (max-width: 18.75em) {
         .info__button-1 {
-          padding: 1rem 2.5rem; } }
+          padding: 1rem 2rem;
+          font-size: 1.2rem; } }
     .info__button-2 {
       padding: 1.5rem 4.5rem;
       border: none;
@@ -156,9 +163,10 @@ footer {
       @media only screen and (max-width: 25em) {
         .info__button-2 {
           padding: 1rem 3rem; } }
-      @media only screen and (max-width: 18.75) {
+      @media only screen and (max-width: 18.75em) {
         .info__button-2 {
-          padding: 1rem 2.5rem; } }
+          padding: 1rem 2rem;
+          font-size: 1.2rem; } }
   .info__image {
     margin-top: 2rem;
     margin-right: 7rem;
@@ -185,7 +193,7 @@ footer {
   @media only screen and (max-width: 25em) {
     .logo-img:not(:last-child) {
       margin-right: 4rem; } }
-  @media only screen and (max-width: 18.75) {
+  @media only screen and (max-width: 18.75em) {
     .logo-img:not(:last-child) {
       margin-right: 1.5rem; } }
 
@@ -200,6 +208,9 @@ footer {
   @media only screen and (max-width: 31.25em) {
     .trading-section__content {
       margin-left: 1rem; } }
+  @media only screen and (max-width: 18.75em) {
+    .trading-section__content {
+      margin-left: -3rem; } }
 
 .trading-section__box {
   border: 1px solid var(--Grey-light-4);
@@ -219,6 +230,11 @@ footer {
     .trading-section__box {
       width: 15rem;
       padding: .5rem; } }
+  @media only screen and (max-width: 18.75em) {
+    .trading-section__box {
+      width: 13rem;
+      font-size: 1.2rem;
+      margin: 1rem; } }
   .trading-section__box-heading {
     font-size: 1.6rem;
     font-weight: 600;
@@ -252,6 +268,9 @@ footer {
     @media only screen and (max-width: 25em) {
       .start-trading__box {
         width: 40rem; } }
+    @media only screen and (max-width: 18.75em) {
+      .start-trading__box {
+        width: 30rem; } }
 
 .testimonails {
   border: 1px solid var(--Grey-light-4);
@@ -280,6 +299,11 @@ footer {
     .testimonails {
       width: 15rem;
       margin: 2rem 3rem;
+      padding: 1rem; } }
+  @media only screen and (max-width: 18.75em) {
+    .testimonails {
+      width: 12rem;
+      margin: 2rem 1rem;
       padding: 1rem; } }
   .testimonails__img {
     width: 5rem;
