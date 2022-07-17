@@ -213,7 +213,7 @@ footer {
       margin-left: 1rem; } }
   @media only screen and (max-width: 24.5em) {
     .trading-section__content {
-      margin-left: -3rem; } }
+      margin: 0 auto; } }
 
 .trading-section__box {
   border: 1px solid var(--Grey-light-4);
