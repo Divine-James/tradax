@@ -208,9 +208,9 @@ footer {
   @media only screen and (max-width: 37.5em) {
     .trading-section__content {
       margin-left: 3rem; } }
-  @media only screen and (max-width: 31.25em) {
+  @media only screen and (max-width: 25em) {
     .trading-section__content {
-      margin-left: 1rem; } }
+      margin: 0 auto; } }
   @media only screen and (max-width: 24.5em) {
     .trading-section__content {
       margin: 0 auto; } }

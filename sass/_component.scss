@@ -160,8 +160,8 @@
         @media only screen and (max-width: $bp-small){
             margin-left: 3rem;
            }
-           @media only screen and (max-width: $bp-smaller){
-            margin-left: 1rem;
+           @media only screen and (max-width: $bp-smallest){
+            margin: 0 auto;
         }
         @media only screen and (max-width: $bp-smallphone){
             margin: 0 auto;
